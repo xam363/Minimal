@@ -42,7 +42,6 @@ public class MainActivity extends Activity {
 
         public PongView(Context context) {
             super(context);
-            // Используем стабильное имя файла настроек
             prefs = context.getSharedPreferences("CyberPongPrefs", Context.MODE_PRIVATE);
             highScore = prefs.getInt("highScore", 0);
             
@@ -150,7 +149,6 @@ public class MainActivity extends Activity {
             canvas.drawRect(pX, paddleY, pX + pW, paddleY + paddleHeight, paint);
             paint.setShader(null);
 
-            // ИНТЕРФЕЙС
             paint.setColor(Color.WHITE); paint.setTextSize(60);
             canvas.drawText("SCORE: " + score, 50, 100, paint);
             
