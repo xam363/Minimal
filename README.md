@@ -1,2 +1,2 @@
 Very small game.
-Markdown: ![Описание картинки](screen.png)
+![Описание картинки](screen.png)
